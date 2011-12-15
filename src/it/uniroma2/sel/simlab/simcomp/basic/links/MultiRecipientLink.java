@@ -20,39 +20,37 @@
  *
  */
 
-package it.uniroma2.info.sel.simlab.simcomp.basic.links;
+package it.uniroma2.sel.simlab.simcomp.basic.links;
 
-
-import it.uniroma2.info.sel.simlab.simcomp.basic.ports.InPort;
-import it.uniroma2.info.sel.simlab.simcomp.basic.ports.OutPort;
+import it.uniroma2.sel.simlab.simcomp.basic.ports.InPort;
+import it.uniroma2.sel.simlab.simcomp.basic.ports.OutPort;
 
 import java.util.List;
 
-
-/** Implements a link that connects two or more sender to a single recipient
+/** Implements a link that connects a single sender to two or more recipients
  *
  * @author  Daniele Gianni
  */
-public final class MultiSenderLink extends BasicLink {
+public class MultiRecipientLink extends BasicLink {
         
-    public MultiSenderLink(final List<OutPort> outputPorts, final InPort inputPort) {
-        super(outputPorts.size(), 1);
+    public MultiRecipientLink(final List<InPort> inputPorts, final OutPort outputPort) {
+        super(1, inputPorts.size());
         
-        connect(outputPorts, inputPort);
+        connect(inputPorts, outputPort);
     }
             
-    private void connect(final List<OutPort> ops, final InPort ip) {
+    private void connect(final List<InPort> ips, final OutPort op) {
+
+        op.setLink(this);
+        outputPorts.add(op);
         
-        inputPorts.add(ip);
-        ip.setLink(this);
-                
-        for (OutPort o : ops) {            
-            outputPorts.add(o);
-            o.setLink(this);
+        for (InPort i : ips) {
+            i.setLink(this);
+            inputPorts.add(i);
         }
     }
         
-    public static MultiSenderLink makeLink(final List<OutPort> ops, final InPort ip) {
-        return new MultiSenderLink(ops, ip);
-    }            
+    public static MultiRecipientLink makeLink(final List<InPort> ips, final OutPort op) {
+        return new MultiRecipientLink(ips, op);
+    }      
 }

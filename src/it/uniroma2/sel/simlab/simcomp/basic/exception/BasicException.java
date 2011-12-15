@@ -20,20 +20,25 @@
  *
  */
 
-package it.uniroma2.info.sel.simlab.simcomp.basic.ports;
+package it.uniroma2.sel.simlab.simcomp.basic.exception;
 
-import it.uniroma2.info.sel.simlab.simarch.data.GeneralEntity;
-import it.uniroma2.info.sel.simlab.simarch.data.Name;
-import it.uniroma2.info.sel.simlab.simarch.data.OutputPort;
+import it.uniroma2.sel.simlab.simarch.exceptions.layer3.Layer3Exception;
 
-/*
- * Provides a basic implementation of the OutputPort interface
+/**
  *
- * @author Daniele Gianni
+ * @author gianni
  */
-public class OutPort extends BasicPort implements OutputPort {
+public class BasicException extends Layer3Exception {
     
-    public OutPort(final Name n, final GeneralEntity e) {
-        super(n, e);
+    /** Creates a new instance of BasicException */
+    public BasicException() {
+    }
+    
+    public BasicException(final Exception e) {
+        super(e);
+    }
+    
+    public BasicException(final String s) {
+        super(s);
     }
 }

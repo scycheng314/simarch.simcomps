@@ -20,12 +20,12 @@
  *
  */
 
-package it.uniroma2.info.sel.simlab.simcomp.basic.ports;
+package it.uniroma2.sel.simlab.simcomp.basic.ports;
 
-import it.uniroma2.info.sel.simlab.simarch.data.GeneralEntity;
-import it.uniroma2.info.sel.simlab.simarch.data.Name;
-import it.uniroma2.info.sel.simlab.simarch.data.Port;
-import it.uniroma2.info.sel.simlab.simcomp.basic.links.BasicLink;
+import it.uniroma2.sel.simlab.simarch.data.GeneralEntity;
+import it.uniroma2.sel.simlab.simarch.data.Name;
+import it.uniroma2.sel.simlab.simarch.data.Port;
+import it.uniroma2.sel.simlab.simcomp.basic.links.BasicLink;
 
 /*
  * Provides a basic implementation of the port interface

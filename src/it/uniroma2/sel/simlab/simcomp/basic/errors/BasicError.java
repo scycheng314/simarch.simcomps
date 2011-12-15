@@ -20,25 +20,25 @@
  *
  */
 
-package it.uniroma2.info.sel.simlab.simcomp.basic.exception;
+package it.uniroma2.sel.simlab.simcomp.basic.errors;
 
-import it.uniroma2.info.sel.simlab.simarch.exceptions.layer3.Layer3Exception;
+import it.uniroma2.sel.simlab.simarch.errors.Layer3Error;
 
 /**
  *
- * @author gianni
+ * @author Daniele Gianni
  */
-public class BasicException extends Layer3Exception {
+public class BasicError extends Layer3Error {
     
-    /** Creates a new instance of BasicException */
-    public BasicException() {
+    /** Creates a new instance of BasicError */
+    public BasicError() {
     }
     
-    public BasicException(final Exception e) {
-        super(e);
-    }
-    
-    public BasicException(final String s) {
+    public BasicError(final String s) {
         super(s);
+    }
+    
+    public BasicError(final Throwable t) {
+        super(t);
     }
 }

@@ -20,25 +20,20 @@
  *
  */
 
-package it.uniroma2.info.sel.simlab.simcomp.basic.errors;
+package it.uniroma2.sel.simlab.simcomp.basic.ports;
 
-import it.uniroma2.info.sel.simlab.simarch.errors.Layer3Error;
+import it.uniroma2.sel.simlab.simarch.data.GeneralEntity;
+import it.uniroma2.sel.simlab.simarch.data.Name;
+import it.uniroma2.sel.simlab.simarch.data.OutputPort;
 
-/**
+/*
+ * Provides a basic implementation of the OutputPort interface
  *
  * @author Daniele Gianni
  */
-public class BasicError extends Layer3Error {
+public class OutPort extends BasicPort implements OutputPort {
     
-    /** Creates a new instance of BasicError */
-    public BasicError() {
-    }
-    
-    public BasicError(final String s) {
-        super(s);
-    }
-    
-    public BasicError(final Throwable t) {
-        super(t);
+    public OutPort(final Name n, final GeneralEntity e) {
+        super(n, e);
     }
 }

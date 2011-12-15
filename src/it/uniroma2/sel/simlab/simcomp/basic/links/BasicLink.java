@@ -20,12 +20,12 @@
  *
  */
 
-package it.uniroma2.info.sel.simlab.simcomp.basic.links;
+package it.uniroma2.sel.simlab.simcomp.basic.links;
 
-import it.uniroma2.info.sel.simlab.simarch.data.ComponentLevelEntity;
-import it.uniroma2.info.sel.simlab.simarch.data.Link;
-import it.uniroma2.info.sel.simlab.simcomp.basic.ports.InPort;
-import it.uniroma2.info.sel.simlab.simcomp.basic.ports.OutPort;
+import it.uniroma2.sel.simlab.simarch.data.ComponentLevelEntity;
+import it.uniroma2.sel.simlab.simarch.data.Link;
+import it.uniroma2.sel.simlab.simcomp.basic.ports.InPort;
+import it.uniroma2.sel.simlab.simcomp.basic.ports.OutPort;
 import java.util.ArrayList;
 import java.util.List;
 

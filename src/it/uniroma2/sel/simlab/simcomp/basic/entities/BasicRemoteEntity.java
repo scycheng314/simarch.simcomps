@@ -20,11 +20,11 @@
  *
  */
 
-package it.uniroma2.info.sel.simlab.simcomp.basic.entities;
+package it.uniroma2.sel.simlab.simcomp.basic.entities;
 
-import it.uniroma2.info.sel.simlab.simarch.data.Name;
-import it.uniroma2.info.sel.simlab.simarch.data.RemoteEntity;
-import it.uniroma2.info.sel.simlab.simarch.exceptions.InvalidNameException;
+import it.uniroma2.sel.simlab.simarch.data.Name;
+import it.uniroma2.sel.simlab.simarch.data.RemoteEntity;
+import it.uniroma2.sel.simlab.simarch.exceptions.InvalidNameException;
 
 
 /** Represents a proxy class for a remote {@code SimjEntity} (a {@code LocalEntity} running on a remote system)

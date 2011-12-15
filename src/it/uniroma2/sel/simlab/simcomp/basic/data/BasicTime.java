@@ -20,9 +20,9 @@
  *
  */
 
-package it.uniroma2.info.sel.simlab.simcomp.basic.data;
+package it.uniroma2.sel.simlab.simcomp.basic.data;
 
-import it.uniroma2.info.sel.simlab.simarch.data.Time;
+import it.uniroma2.sel.simlab.simarch.data.Time;
 
 /**
  *

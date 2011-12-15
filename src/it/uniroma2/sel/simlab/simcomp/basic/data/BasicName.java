@@ -20,22 +20,21 @@
  *
  */
 
-package it.uniroma2.info.sel.simlab.simcomp.basic.data;
+package it.uniroma2.sel.simlab.simcomp.basic.data;
 
-import it.uniroma2.info.sel.simlab.simarch.data.Name;
-import it.uniroma2.info.sel.simlab.simarch.exceptions.InvalidNameException;
-
+import it.uniroma2.sel.simlab.simarch.data.Name;
+import it.uniroma2.sel.simlab.simarch.exceptions.InvalidNameException;
 
 /**
  *
  * @author Daniele Gianni
  */
-public class BasicFullName extends Name{
+public class BasicName extends Name{
     
     public final static String TOKEN = ".";
     
     /** Creates a new instance of BasicName */
-    public BasicFullName(final String s) throws InvalidNameException {
+    public BasicName(final String s) throws InvalidNameException {
         super(s);
     }
     

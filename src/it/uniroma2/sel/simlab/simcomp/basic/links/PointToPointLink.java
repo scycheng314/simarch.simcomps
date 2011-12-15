@@ -20,10 +20,10 @@
  *
  */
 
-package it.uniroma2.info.sel.simlab.simcomp.basic.links;
+package it.uniroma2.sel.simlab.simcomp.basic.links;
 
-import it.uniroma2.info.sel.simlab.simcomp.basic.ports.InPort;
-import it.uniroma2.info.sel.simlab.simcomp.basic.ports.OutPort;
+import it.uniroma2.sel.simlab.simcomp.basic.ports.InPort;
+import it.uniroma2.sel.simlab.simcomp.basic.ports.OutPort;
 
 /*
  * Implement the link that connects one sender to one recipient

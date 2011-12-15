@@ -20,25 +20,25 @@
  *
  */
 
-package it.uniroma2.info.sel.simlab.simcomp.basic.entities;
+package it.uniroma2.sel.simlab.simcomp.basic.entities;
 
-import it.uniroma2.info.sel.simlab.simarch.data.ComponentLevelEntity;
-import it.uniroma2.info.sel.simlab.simarch.data.Event;
-import it.uniroma2.info.sel.simlab.simarch.data.GeneralEntity;
-import it.uniroma2.info.sel.simlab.simarch.data.Name;
-import it.uniroma2.info.sel.simlab.simarch.data.OutputPort;
-import it.uniroma2.info.sel.simlab.simarch.data.RemoteEntity;
-import it.uniroma2.info.sel.simlab.simarch.data.Time;
-import it.uniroma2.info.sel.simlab.simarch.exceptions.InvalidNameException;
-import it.uniroma2.info.sel.simlab.simarch.exceptions.layer2.Layer2InternalException;
-import it.uniroma2.info.sel.simlab.simarch.exceptions.layer2.TimeAlreadyPassedException;
-import it.uniroma2.info.sel.simlab.simarch.exceptions.layer2.UnableToRegisterEntityException;
-import it.uniroma2.info.sel.simlab.simarch.exceptions.layer2.UnknownRecipientException;
-import it.uniroma2.info.sel.simlab.simarch.exceptions.layer2.UnlinkedPortException;
-import it.uniroma2.info.sel.simlab.simarch.exceptions.layer3.Layer3Exception;
-import it.uniroma2.info.sel.simlab.simarch.factories.Layer3ToLayer2Factory;
-import it.uniroma2.info.sel.simlab.simarch.interfaces.Layer3ToLayer2;
-import it.uniroma2.info.sel.simlab.simcomp.basic.errors.BasicError;
+import it.uniroma2.sel.simlab.simarch.data.ComponentLevelEntity;
+import it.uniroma2.sel.simlab.simarch.data.Event;
+import it.uniroma2.sel.simlab.simarch.data.GeneralEntity;
+import it.uniroma2.sel.simlab.simarch.data.Name;
+import it.uniroma2.sel.simlab.simarch.data.OutputPort;
+import it.uniroma2.sel.simlab.simarch.data.RemoteEntity;
+import it.uniroma2.sel.simlab.simarch.data.Time;
+import it.uniroma2.sel.simlab.simarch.exceptions.InvalidNameException;
+import it.uniroma2.sel.simlab.simarch.exceptions.layer2.Layer2InternalException;
+import it.uniroma2.sel.simlab.simarch.exceptions.layer2.TimeAlreadyPassedException;
+import it.uniroma2.sel.simlab.simarch.exceptions.layer2.UnableToRegisterEntityException;
+import it.uniroma2.sel.simlab.simarch.exceptions.layer2.UnknownRecipientException;
+import it.uniroma2.sel.simlab.simarch.exceptions.layer2.UnlinkedPortException;
+import it.uniroma2.sel.simlab.simarch.exceptions.layer3.Layer3Exception;
+import it.uniroma2.sel.simlab.simarch.factories.Layer3ToLayer2Factory;
+import it.uniroma2.sel.simlab.simarch.interfaces.Layer3ToLayer2;
+import it.uniroma2.sel.simlab.simcomp.basic.errors.BasicError;
 
 /** Defines the basic simulation entity implementation. This includes the definition
  * of the send, hold, and wait methods that will then be used by developers of

@@ -20,11 +20,11 @@
  *
  */
 
-package it.uniroma2.info.sel.simlab.simcomp.basic.ports;
+package it.uniroma2.sel.simlab.simcomp.basic.ports;
 
-import it.uniroma2.info.sel.simlab.simarch.data.GeneralEntity;
-import it.uniroma2.info.sel.simlab.simarch.data.Name;
-import it.uniroma2.info.sel.simlab.simarch.data.InputPort;
+import it.uniroma2.sel.simlab.simarch.data.GeneralEntity;
+import it.uniroma2.sel.simlab.simarch.data.Name;
+import it.uniroma2.sel.simlab.simarch.data.InputPort;
 
 /*
  * Provides a basic implementation of the InputPort interface
